@@ -5,6 +5,11 @@
 *
 * This code is licensed under the MIT license (MIT) (http://opensource.org/licenses/MIT)
 */
+//#define VK_EXAMPLE_XCODE_GENERATED
+//#define VK_USE_PLATFORM_METAL_EXT
+//#define VK_EXAMPLE_SHADERS_DIR "\"/Users/rg/rcsim2/Vulkan/shaders/\""
+//#define VK_EXAMPLE_ASSETS_DIR "\"/Users/rg/rcsim2/Vulkan/assets/\""
+
 
 #pragma once
 
@@ -532,7 +537,7 @@ int main(const int argc, const char *argv[])													    \
 VulkanExample *vulkanExample;																		\
 int main(const int argc, const char *argv[])														\
 {																									\
-	@autoreleasepool																				\
+	@autoreleasepool																			\
 	{																								\
 		for (size_t i = 0; i < argc; i++) { VulkanExample::args.push_back(argv[i]); };				\
 		vulkanExample = new VulkanExample();														\
